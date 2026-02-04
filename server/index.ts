@@ -34,6 +34,8 @@ raw text content
 \`\`\`
 
 <ref-linkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+
+<script></script>
 `;
 
 app.post("/api/sse", (req, res) => {

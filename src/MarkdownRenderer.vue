@@ -6,6 +6,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
+import rehypeSanitize from "rehype-sanitize";
 import ASTRenderer from "./ASTRenderer.vue";
 
 const props = defineProps<{
@@ -17,6 +18,7 @@ const ast = ref<any>(null);
 const processor = unified()
   .use(remarkParse)
   .use(remarkRehype, { allowDangerousHtml: true })
+  .use(rehypeSanitize)
   .use(rehypeHighlight)
   .use(rehypeRaw);
 

@@ -35,7 +35,7 @@ interface TableNode extends ElementNode {
   children: [TextNode];
   tagName: "code";
   properties: {
-    className: ["hljs", "language-table"];
+    className: ["language-table"];
   };
 }
 
